@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+   
+        Console.Write("Você deseja comprar um carro novo? (s/n): ");
+        string desejaComprar = Console.ReadLine().ToLower();
+
+      
+        Console.Write("Você tem dinheiro suficiente para isso? (s/n): ");
+        string temDinheiro = Console.ReadLine().ToLower();
+
+        if (desejaComprar == "s" && temDinheiro == "s")
+        {
+            Console.WriteLine("Parabéns, você pode comprar um carro novo!");
+        }
+        else
+        {
+            Console.WriteLine("Infelizmente, você não pode comprar um carro novo no momento.");
+            Console.ReadKey();
+        }
+    }
+}
