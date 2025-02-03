@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Você possui um diploma de ensino superior? (s/n): ");
+        string possuiDiploma = Console.ReadLine().ToLower();
+
+        Console.Write("Quantos anos você tem? ");
+        int idade = Convert.ToInt32(Console.ReadLine());
+
+        if (possuiDiploma == "s" && idade > 21)
+        {
+            Console.WriteLine("Parabéns, você está qualificado para a vaga!");
+        }
+        else
+        {
+            Console.WriteLine("Infelizmente, você não atende aos requisitos para a vaga.");
+            Console.ReadKey();
+        }
+    }
+}
